@@ -20,17 +20,11 @@ public class MainBukuAlamat {
         bio2.setemail(email1);
         System.out.println("Biodata diinputkan lewat constructor");
         System.out.println("---------------------------------");
-        System.out.println("Nama       :"+bio1.getNama());
-        System.out.println("Alamat     :"+bio1.getAlamat());
-        System.out.println("No Hp      :"+bio1.gettelepon());
-        System.out.println("Emai;      :"+bio1.getemail());
+        bio1.displaymessage();
         System.out.println();
         System.out.println("Biodata diinputkan oleh user");
         System.out.println("---------------------------------");
-        System.out.println("Nama       :"+bio2.getNama());
-        System.out.println("Alamat     :"+bio2.getAlamat());
-        System.out.println("No HP      :"+bio2.gettelepon());
-        System.out.println("Email      :"+bio2.getemail());
+        bio2.displaymessage();
         System.out.println("--------------------------------");
         
 }
