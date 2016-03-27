@@ -27,7 +27,12 @@ public class Mainmydata {
         nuelz.setNoTelp(not);
         nuelz.setEmail(em);
         System.out.println("");
-        nuelz.printData();
+          System.out.println("----------------------------------------------");
+        System.out.println("Nama \t\t: "+nuelz.getNama());
+        System.out.println("Alamat \t\t: "+nuelz.getAlamat());
+        System.out.println("No. Telepon \t: "+nuelz.getNoTelp());
+        System.out.println("Email \t\t: "+nuelz.getEmail());
+        System.out.println("----------------------------------------------");
         
         
     }

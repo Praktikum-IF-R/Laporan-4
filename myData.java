@@ -55,12 +55,5 @@ public class myData {
     public String getEmail() {
         return email;
     }
-    void printData(){
-        System.out.println("----------------------------------------------");
-        System.out.println("Nama \t\t: "+nama);
-        System.out.println("Alamat \t\t: "+alamat);
-        System.out.println("No. Telepon \t: "+no_telp);
-        System.out.println("Email \t\t: "+email);
-        System.out.println("----------------------------------------------");
-    }
+
 }
