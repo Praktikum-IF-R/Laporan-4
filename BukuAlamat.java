@@ -41,4 +41,10 @@ public void setemail(String e){
 public String getemail(){
     return email;
 }    
+public void displaymessage(){
+        System.out.println("Nama       :"+getNama());
+        System.out.println("Alamat     :"+getAlamat());
+        System.out.println("No Hp      :"+gettelepon());
+        System.out.println("Emai;      :"+getemail());
+}
 }
