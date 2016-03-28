@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class mainBukualamat {
+    public static void main(String[] args) {
+        Scanner yes=new Scanner(System.in);
+        String lagi;
+        Bukualamat a1 = new Bukualamat();
+        a1.setNama("Hafiz Maulana");
+        a1.setAlamat("Jl. pisang kipas no35");
+        a1.setTelepon("085774133233");
+        a1.setEmail("hafizmaullana193@gmail.com");
+        
+       Bukualamat a2 = new Bukualamat();
+       a2.setNama("Jeffry Pambudi");
+       a2.setAlamat("Jl. Baliwinata 5");
+       a2.setTelepon("0822424222212");
+       a2.setEmail("jeffrybudi@gmail.com");
+       
+       Bukualamat a3 = new Bukualamat();
+       a3.setNama("Tatank galaw");
+       a3.setAlamat("Jl. Bojong no5");
+       a3.setTelepon("089909090903");
+       a3.setEmail("tatank@gmail.com");    
+   System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        System.out.println("                    ^ B U K U    A L A M A T ^");
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        do{
+            System.out.println("");
+            System.out.print("Cari Alamat: ");
+            String cari=yes.nextLine();
+            System.out.println("---------------------------------------------------------------------");
+            if (cari.equalsIgnoreCase("Hafiz")) {
+                a1.displayCari();
+            }else if (cari.equalsIgnoreCase("Jeffry")){
+                a2.displayCari();
+        }else if (cari.equalsIgnoreCase("tatank")){
+                a3.displayCari();
+                System.out.println("");
+        }else{
+            System.out.println("Data yang dicari tidak ditemukan...");
+        }
+            System.out.println("---------------------------------------------------------------------");
+            System.out.print("Mencari kembali? (Y/T): ");
+            lagi=yes.nextLine();
+    }while(lagi.equalsIgnoreCase("Y"));
+        System.out.println("Maaf, Data tidak ada di dalam Buku...");
+  }
+}
