@@ -12,6 +12,10 @@ public class addressbook {
         email = "null";
     }
 
+    public addressbook() {
+
+    }
+
     public String getNama() {
         return nama;
     }
@@ -42,6 +46,15 @@ public class addressbook {
 
     public void setTelp(int telp) {
         this.telp = telp;
+    }
+
+    public void summary(addressbook a) {
+        System.out.println("==================================================");
+        System.out.println("Nama         : " + a.getNama());
+        System.out.println("Alamat       : " + a.getAlamat());
+        System.out.println("No. Telepon  : " + a.getTelp());
+        System.out.println("E-mail       : " + a.getEmail());
+        System.out.println("==================================================\n");
     }
 
 }
